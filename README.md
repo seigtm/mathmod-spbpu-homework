@@ -8,6 +8,7 @@ course at Saint Petersburg Polytechnic University, led by instructor Leontyeva T
 1. [Numerical Integration](1.py).
 2. [Coordinate Descent with Adaptive Step](2.py).
 3. [Random Number Generator Verification](3.py).
+4. [Parametric Model Identification](4.py).
 
 ## 1.py
 
@@ -107,3 +108,22 @@ mean, variance, standard deviation, and the construction of a frequency diagram.
   Central Limit Theorem (CLT) method.
 - `plot_histogram(numbers, num_bins, r1, r2, title)`: Plots a frequency histogram for the given
   numbers.
+
+## 4.py
+
+### Description
+
+1. `numerical_integration` - Transition from transfer function to a differential equation and its
+  solution using Euler's method. Output data (`y(t)` - model).
+2. Implementation of a custom random number generator using the Central Limit Theorem (CLT) method.
+3. Generating noise on the graph (adding noise to the output signal) - Experimental data.
+4. Forming the objective function (considering `b1` and `b3` as unknowns).
+5. Optimization method - coordinate descent with adaptive step (4 test points).
+
+#### Libraries Used
+
+- numpy
+- pandas
+- matplotlib.pyplot
+- random
+- concurrent.futures.ThreadPoolExecutor
